@@ -3,6 +3,7 @@ class Author
 
 
   def initialize(name)
+  #Author is initialized with a name as a string  
     @name = name
     @articles = []
     @magazines = []
