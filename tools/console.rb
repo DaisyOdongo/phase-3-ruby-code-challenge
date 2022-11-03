@@ -22,14 +22,6 @@ achebe.add_article(entertainment, "Entertainment industry in Nigeria making it b
 chimamanda.add_article(education, "Reading many books help you improve your language")
 ngugi.add_article(politics, "Kenyans still vote along ethic groups")
 
-
-
-
-
-
-
-
-
 ### DO NOT REMOVE THIS
 binding.pry
 
