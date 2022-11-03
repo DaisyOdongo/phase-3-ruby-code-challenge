@@ -1,7 +1,7 @@
 # Please copy/paste all three classes into this file to submit your solution!
 #Article class
 class Article
-     attr_reader :title #An article **cannot** change its author, magazine, or title after it is has been initialized.
+     attr_reader :author, :magazine, :title #An article **cannot** change its author, magazine, or title after it is has been initialized.
     @@all = []
     def initialize(author, magazine, title)    # An article is initialized with an author as an Author object, a magazine as a Magazine object, and title as a string.
         if(author.is_a?(Author) && magazine.is_a?(Magazine) && title.is_a?(String))
@@ -15,11 +15,11 @@ class Article
     end
 
     def author
-        @author
+        @author.name
     end
 
     def magazine
-        @magazine
+        @magazine.name
     end
 
     # Returns an array of all Article instances

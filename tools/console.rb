@@ -21,6 +21,7 @@ runner = Magazine.new("Runner", "Sports")
 achebe.add_article(entertainment, "Entertainment industry in Nigeria making it big")
 chimamanda.add_article(education, "Reading many books help you improve your language")
 ngugi.add_article(politics, "Kenyans still vote along ethic groups")
+Article.all.count
 
 ### DO NOT REMOVE THIS
 binding.pry
