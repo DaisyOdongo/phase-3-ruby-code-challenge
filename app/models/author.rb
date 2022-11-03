@@ -21,4 +21,5 @@ class Author
      magazines = articles.map {|article| article.magazine}
      magazines.map {|magazine| magazine.name}.uniq
   end
+  
 end

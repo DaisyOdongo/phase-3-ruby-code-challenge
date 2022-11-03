@@ -38,6 +38,5 @@ class Magazine
   private
   def articles_by_authors_in_this_magazine
     Article.all.filter {|article| article.magazine == self}
-  end
-  
+  end 
 end

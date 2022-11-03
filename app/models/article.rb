@@ -25,4 +25,5 @@ class Article
     def self.all
         @@all
     end
+    
 end
