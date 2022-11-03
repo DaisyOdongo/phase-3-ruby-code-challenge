@@ -1,6 +1,5 @@
 class Author
-  attr_accessor :name
-
+  attr_reader :name
 
   def initialize(name)
   #Author is initialized with a name as a string  
@@ -12,26 +11,14 @@ class Author
     else
       puts "Expected name.class to be a String"
     end
+  end    
 
     def articles 
-    @articles
+    Article.all.select {|article| article.author==self}
   end
+
   def magazines
-    @magazines.uniq
+     magazines = articles.map {|article| article.magazine}
+     magazines.map {|magazine| magazine.name}.uniq
   end
-  def add_article(magazine, title)
-    if(magazine.is_a?(Magazine) && title.is_a?(String))
-      @articles  << Article.new(self, magazine, title)
-      @magazines << magazine
-    else
-      puts "Expected Magazine.class to be an Object, title.class to be a String"
-    end
-  end
-  def topic_areas
-    @magazines.map {|magazine| magazine.category}.uniq
-  end
-  
-  end
-
-
 end
